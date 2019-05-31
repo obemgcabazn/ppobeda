@@ -20,22 +20,12 @@ get_header();?>
     </div>
 
     <div class="col-12 col-sm-8 col-md-9">
-
-      <?php
-      if (have_posts()):
-          while (have_posts()): the_post(); 
-      ?>
-            <h1><?php the_title(); ?></h1>
-
-            <?php the_content();
-
-          endwhile;
-      endif;
-      ?>
+      <h1><?php the_title(); ?></h1>
 
       <?php
       $stati_children = new WP_Query(array(
         'post_type' => 'page',
+        'posts_per_page' => 50,
         'post_parent' => get_the_ID()
         )
       );
@@ -51,6 +41,18 @@ get_header();?>
         wp_reset_query();
       ?>
       </ul>
+
+      <?php
+      if (have_posts()):
+          while (have_posts()): the_post(); 
+      ?>
+            
+
+            <?php the_content();
+
+          endwhile;
+      endif;
+      ?>
     </div>
   </div>
 

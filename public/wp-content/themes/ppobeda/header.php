@@ -51,7 +51,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-5">
             <div class="row">
               <div class="col-12 col-lg-5 text-center text-sm-right mt-3">
                 <a href="/"><img src="<?=get_template_directory_uri()?>/img/pobeda_stamp.svg" width=""></a>
@@ -63,15 +63,14 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-7">
             <div class="row mt-3 no-gutters">
               <div class="text-center text-sm-left col-12 col-lg-5 col-xl-5">
-                <address><a href="/kontakty/" target="_blank">Московская обл., г. Мытищи,<br>ул. Летная, стр. 19</a></address>
+                <address><a href="/kontakty/" target="_blank">г. Мытищи, ул. Летная, стр. 19</a></address>
               </div>
               <div class="text-center text-sm-left col-12 col-lg-3 col-xl-3">
                 <a class="email" href="mailto:zakaz@ppobeda.ru" target="_blank" rel="nofollow">zakaz@ppobeda.ru</a>
               </div>
-
               <div class="text-center text-sm-right col-12 col-lg-4 col-xl-4">
                 <a href="tel:+74950124499" class="phone" target="_blank">+7 (495) 012-44-99</a>
               </div>
@@ -93,14 +92,14 @@
                 $top_menu = str_replace('<a', '<a class="nav-link"', $top_menu);
                 echo $top_menu;
                 ?>
-                <hr class="mt-1" size="1" color="#191919">
+                <!-- <hr class="mt-1" size="1" color="#191919"> -->
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <hr size="5px" color="#000" class="header_bottom_hr">
+            <hr size="3px" color="#000" class="header_bottom_hr">
           </div>
         </div>
       </div> <!-- container -->

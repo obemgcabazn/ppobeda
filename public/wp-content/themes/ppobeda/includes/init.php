@@ -133,7 +133,7 @@ function remove_footer_admin (){
 add_filter('admin_footer_text', 'remove_footer_admin');
 
 // Кастомизация логин формы
-function iservice_login_logo() {
+function pobrda_login_logo() {
   echo '<style  type="text/css">
     .login h1 a { 
       background: url("/wp-content/themes/ppobeda/img/logo.svg") no-repeat !important; 
@@ -142,4 +142,4 @@ function iservice_login_logo() {
     }
     </style>';
 }
-add_action('login_head', 'iservice_login_logo');
+add_action('login_head', 'pobrda_login_logo');

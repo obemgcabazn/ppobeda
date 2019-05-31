@@ -37,7 +37,7 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <p class="text-uppercase copyright">&copy; 2018 ООО "Предприятие Победа"</p>
+          <p class="text-uppercase copyright">&copy; 2018 - 2019 ООО "Предприятие Победа"</p>
         </div>
       </div>
     </div>

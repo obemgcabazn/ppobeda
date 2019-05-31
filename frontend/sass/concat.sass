@@ -1,7 +1,9 @@
 @import variables
 @import pushy
 
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700&subset=cyrillic')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400,700&display=swap&subset=cyrillic')
+
+$black: #363636
 
 img
   max-width: 100%
@@ -11,18 +13,34 @@ img
 
 h1, h2, h3, h4, h5, h6
   text-transform: uppercase
-  font-family: 'Oswald', sans-serif
-  line-height: 1.7
+  font-family: 'Roboto Condensed', sans-serif
+  line-height: 1.4
+  font-weight: bold
+  *
+    font-family: inherit
 
-p, li
+h1
+  margin-bottom: 30px
+
+h2
+  margin-top: 30px
+  margin-bottom: 15px
+
+h4
+  margin-bottom: 15px
+
+div, p, li
   font-size: 18px
+  font-weight: 300
 
 ul li a
-  color: black
+  color: $black
+  font-weight: 300
 
 .breadcrumb-item
+  font-size: 14px
   a
-    color: black
+    color: $black
 
 main
   padding-top: 36px
@@ -30,12 +48,16 @@ main
 header
   // padding-bottom: 30px
   a
-    color: black
+    color: $black
     &:hover
-      color: black
+      color: $black
+
+  div, p, li
+    font-size: 18px
+    font-weight: 400
 
   #toggle-button
-    background: black
+    background: $black
     padding: 5px
   .menu-btn
     background: none
@@ -46,28 +68,37 @@ header
     font-size: 20px
 
   .header_bottom_hr
-    margin: 20px 0
+    margin: 20px 0 35px
 
   address
     margin-bottom: 5px
     a
-      color: black
-      text-decoration: underline
+      color: $black
+      // text-decoration: underline
       font-size: 15px
 
   .phone, .email
-    color: black
+    color: $black
+    font-weight: bold
 
   .top_menu
     display: flex
     justify-content: space-between
+    .menu-item
+      &.current_page_item a
+        color: grey
+        &:hover
+          text-decoration: none
     .nav-link
-      color: black
+      color: $black
       font-weight: bold
       font-size: 16px
-      padding: .2rem .1rem
+      padding: .9rem .1rem 0
+      text-transform: uppercase
+      text-decoration: none
       &:hover
         text-decoration: underline
+    
 
 #sidebar
   .navbar
@@ -80,7 +111,7 @@ header
 
 .btn-link
   font-size: 18px
-  color: black
+  color: $black
 
 .sub-menu
   display: none
@@ -95,7 +126,7 @@ header
 
 footer
   a
-    color: black
+    color: $black
     &:hover
       text-decoration: underline
   hr
