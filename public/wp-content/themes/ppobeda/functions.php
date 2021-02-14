@@ -1,7 +1,8 @@
 <?php
-if (!is_admin()) show_admin_bar(false);
+//if (!is_admin()) show_admin_bar(false);
 
 require_once 'includes/init.php';
+require_once 'shortcodes/send_order.php';
 
 // Используется для телефона, чтобы оставить только цифры в номере
 function return_numbers_from_string( $string ){
