@@ -53,7 +53,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="row">
-              <div class="col-12 col-lg-5 text-center text-sm-right mt-3">
+              <div class="col-12 col-lg-5 text-center text-sm-right mt-1">
                 <a href="/"><img src="<?=get_template_directory_uri()?>/img/pobeda_stamp.svg" width=""></a>
               </div>
               <div class="col-lg-7">

@@ -6,7 +6,7 @@
         </div>
       </div>
       <div class="row no-gutters">
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-2 px-3">
           <img src="<?=get_template_directory_uri()?>/img/pobeda_stamp.svg" alt="Предприятие Победа">
         </div>
         <div class="mb-3 mb-sm-0 col-12 col-lg-3">
@@ -37,7 +37,7 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <p class="text-uppercase copyright">&copy; 2018 - 2019 ООО "Предприятие Победа"</p>
+          <p class="text-uppercase copyright">&copy; 2018 - 2021 ООО "Предприятие Победа"</p>
         </div>
       </div>
     </div>
