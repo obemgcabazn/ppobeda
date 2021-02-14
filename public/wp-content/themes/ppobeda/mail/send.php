@@ -2,8 +2,7 @@
 require_once 'Mail.php';
 
 // Получатель
-Mail::$recipient  = "";
-Mail::$secret_key = "";
+
 
 $return = Mail::getCaptcha( $_POST['g-recaptcha-response'] );
 

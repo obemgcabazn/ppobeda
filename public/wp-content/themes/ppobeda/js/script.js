@@ -10,28 +10,25 @@
                     items: 2,
                     loop: true,
                     margin: 15,
-                    stagePadding: 40,
-                    center: true,
+                    stagePadding: 15,
                 },
                 576: {
                     items: 3,
                     loop: true,
-                    stagePadding: 50,
-                    center: true,
                 },
                 768: {
                     items: 3,
                     loop: true,
                     margin: 30,
-                    stagePadding: 70,
                 },
                 992: {
                     items: 4,
                     loop: true,
                 },
                 1140: {
-                    items: 5,
+                    items: 6,
                     loop: true,
+                    margin: 15,
                 }
             }
         });

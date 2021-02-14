@@ -38,3 +38,4 @@ PSD/
 /public/wp-content/themes/ppobeda/*
 !/public/wp-content/themes/ppobeda/
 !/public/wp-content/themes/ppobeda/*
+public/wp-content/themes/ppobeda/mail/send.php
