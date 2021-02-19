@@ -14,11 +14,15 @@ function send_order(){
         <form action="/wp-content/themes/ppobeda/mail/send.php" method="post" id="send_order">
           <div class="form-group">
             <label for="nameOrder">Имя<sup>*</sup></label>
-            <input type="text" class="form-control" id="nameOrder" name="name" placeholder="Введите имя">
+            <input type="text" class="form-control" id="nameOrder" name="name" placeholder="Введите имя" required="true">
           </div>
           <div class="form-group">
             <label for="phoneOrder">Телефон<sup>*</sup></label>
-            <input type="text" class="form-control" id="phoneOrder" name="phone" placeholder="+7 (">
+            <input type="text" class="form-control" id="phoneOrder" name="phone" placeholder="+7 (" required="true">
+          </div>
+          <div class="form-group">
+            <label for="emailOrder">Email<sup>*</sup></label>
+            <input type="text" class="form-control" id="emailOrder" name="email" placeholder="email@mail.ru" required="true">
           </div>
           <input type="hidden" value="" name="title">
           <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />

@@ -11,12 +11,14 @@ class Mail {
 	public static $recipient;
 	public static $secret_key;
 
-	public function __construct( $name, $phone, $title ) {
+	public function __construct( $name, $phone, $email, $title ) {
 		$this->name                 = htmlspecialchars( $name );
 		$this->phone                = htmlspecialchars( $phone );
+		$this->email                = htmlspecialchars( $email );
 		$this->title                = htmlspecialchars( $title );
 		$this->fields['Клиент']     = $this->name;
 		$this->fields['Телефон']    = $this->phone;
+		$this->fields['Email']			= $this->email;
 		$this->fields['Продукция']  = $this->title;
 	}
 
@@ -29,7 +31,7 @@ class Mail {
 		$this->headers = "MIME-Version: 1.0\r\n";
 		$this->headers .= "Content-type: text/html; charset=utf-8\r\n";
 		$this->headers .= "From: PPobeda <site@ppobeda.ru>\r\n";
-//		$this->headers .= "Reply-To: {$this->email}\r\n";
+		$this->headers .= "Reply-To: {$this->email}\r\n";
 		return $this->headers;
 	}
 
